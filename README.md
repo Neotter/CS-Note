@@ -1,4 +1,4 @@
-![Neotter’s LeetCode Challenge](.\Imag\title.png)
+![Neotter’s LeetCode Challenge](https://github.com/Neotter/Algorithm/blob/master/Imag/title.png)
 
 [![Travis](https://img.shields.io/badge/Language-Python-green.svg)](https://github.com/Neotter/Algorithm)
 [![Travis](https://img.shields.io/badge/Language-Java-Red.svg)](https://github.com/Neotter/Algorithm)

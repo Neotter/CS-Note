@@ -19,6 +19,7 @@ return [0, 1].
 
 ### Code_Python:
 
+```
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         nums_sorted = sorted(nums)
@@ -34,5 +35,6 @@ class Solution:
                 b_index = nums.index(b)
                 return [a_index, b_index]
         return
+```
 
 ### Code_java:

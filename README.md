@@ -3,6 +3,6 @@
 [![Travis](https://img.shields.io/badge/Language-Python-green.svg)](https://github.com/Neotter/Algorithm)
 [![Travis](https://img.shields.io/badge/Language-Java-Red.svg)](https://github.com/Neotter/Algorithm)
 
-| 序号 | 题目&题解 |
-| ---- | -------- |
-| 0    | [十大经典排序算法动画与解析，看我就够了！（配代码完全版）](https://mp.weixin.qq.com/s/)
+| Num | Question & Solution | Level |
+| ---- | ------------------ | ----- |
+| 0    | [Two Sum](https://github.com/Neotter/Algorithm/blob/master/Questions/1_Two_Sum.md) | Easy |

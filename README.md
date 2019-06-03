@@ -1,6 +1,8 @@
 ![Neotter’s LeetCode Challenge](.\Imag\title.png)
+
 [![Travis](https://img.shields.io/badge/Language-Python-green.svg)](https://github.com/Neotter/Algorithm)
 [![Travis](https://img.shields.io/badge/Language-Java-Red.svg)](https://github.com/Neotter/Algorithm)
+
 ## 汇总
 
 | 序号 | 题目&题解                                                    |

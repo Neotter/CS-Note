@@ -6,3 +6,4 @@
 | Num | Question & Solution | Level |
 | ---- | ------------------ | ----- |
 | 0    | [Two Sum](https://github.com/Neotter/Algorithm/blob/master/Questions/1_Two_Sum.md) | Easy |
+| 1    | [Add Two Numbers]() | Medium |

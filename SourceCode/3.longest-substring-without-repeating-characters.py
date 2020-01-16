@@ -55,6 +55,8 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        pass
+        maxLength = 0
+        for i in range(len(s)):
+            pass
 
 # @lc code=end

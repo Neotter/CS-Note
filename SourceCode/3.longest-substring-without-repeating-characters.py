@@ -55,8 +55,16 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        maxLength = 0
-        for i in range(len(s)):
-            pass
+        start = maxLength = 0
+        charDict = {}
 
+        for i in range(len(s)):
+            if s[i] in charDict and start <= charDict[s[i]]:
+                start = charDict[s[i]] + 1
+            else:
+                maxLength = max(maxLength, i - start + 1)
+
+            charDict[s[i]] = i
+
+        return maxLength
 # @lc code=end

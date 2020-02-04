@@ -54,6 +54,7 @@
 
 
 class Solution:
+    # Hash
     def lengthOfLongestSubstring(self, s: str) -> int:
         start = maxLength = 0
         charDict = {}

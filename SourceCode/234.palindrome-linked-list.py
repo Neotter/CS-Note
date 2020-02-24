@@ -42,17 +42,19 @@
 
 class Solution:
     def isPalindrome(self, head: ListNode) -> bool:
-        stack = []
-        curr = head
-        while curr:
-            stack.append(curr.val)
-            curr = curr.next
-        curr = head
-        while head:
-            nodeVal = stack.pop()
-            if nodeVal != head.val:
-                return False
-            head = head.next
-        return True
+        fast = slow = head
+        rev = None
+        # 双指针,快的走的速度是慢的两倍,当快的到达终点之后,慢的指针正好在中间
+        # 慢的指针每走一步都翻转链表,当快的指针到达终点时,前半部分的链表就翻转了
+        # python3中的连续赋值并不是按顺序赋值
+        while fast and fast.next:
+            fast = fast.next.next
+            rev, rev.next, slow = slow, rev, slow.next
+        if fast:
+            slow = slow.next
+        while rev and rev.val == slow.val:
+            slow = slow.next
+            rev = rev.next
+        return not rev
 
 # @lc code=end

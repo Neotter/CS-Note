@@ -41,20 +41,19 @@
 
 class Solution:
     def findUnsortedSubarray(self, nums: List[int]) -> int:
-        start = 0
-        end = len(nums) - 1
-        for i in range(end-1):
-            if nums[i] > nums[i + 1]:
+        # 排完序之后就好办了
+        sortedNums = sorted(nums)
+        start, end = -1, -1
+        for i in range(len(nums)):
+            if nums[i] != sortedNums[i]:
                 start = i
                 break
-        for j in range(end, start, -1):
-            if nums[j-1] > nums[j]:
-                end = j
-                break
-        if start != 0 and end == len(nums) - 1:
-            return 2
-        if end - start == len(nums) - 1:
+        if start == -1:
             return 0
+        for i in range(len(nums)-1, -1, -1):
+            if nums[i] != sortedNums[i]:
+                end = i
+                break
         return end - start + 1
 
 # @lc code=end

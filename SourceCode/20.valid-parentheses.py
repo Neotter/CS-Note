@@ -67,12 +67,13 @@
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack, match = [], {')': '(', ']': '[', '}': '{'}
+        stack = []
+        dict = {'(': ')', '{': '}', '[': ']'}
         for ch in s:
-            if ch in match:
-                if not (stack and stack.pop() == match[ch]):
-                    return False
-            else:
+            if ch == '{' or ch == '(' or ch == '[':
                 stack.append(ch)
+            else:
+                if not(stack and dict[stack.pop()] == ch):
+                    return False
         return not stack
 # @lc code=end

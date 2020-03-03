@@ -51,7 +51,7 @@ class Solution:
         if num > 0:
             while len(res) <= num:
                 res.extend([x + 1 for x in res])
-        return res[0:num+1]
+        return res
 
 
 # @lc code=end

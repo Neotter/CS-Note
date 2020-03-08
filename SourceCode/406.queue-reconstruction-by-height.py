@@ -45,5 +45,5 @@ class Solution:
         ans = []
         for p in people:
             ans.insert(p[1], p)
-        return ans
+        return people
 # @lc code=end

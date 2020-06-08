@@ -2,7 +2,7 @@
  * @Author: Nettor
  * @Date: 2020-06-08 15:35:19
  * @LastEditors: Nettor
- * @LastEditTime: 2020-06-08 16:31:11
+ * @LastEditTime: 2020-06-08 16:33:33
  * @Description: file content
 -->
 
@@ -14,4 +14,4 @@
 
 |                                                                 Algorithm                                                                 | Go  | Java | Markdown |
 | :---------------------------------------------------------------------------------------------------------------------------------------: | :-: | :--: | -------- |
-| [![LeetCode](https://img.shields.io/badge/%20-LeetCode-lightgrey?logo=LeetCode)](https://github.com/Neotter/CS-Note/tree/master/LeetCode) | Go  | Java | MarkDown |
+| [![LeetCode](https://img.shields.io/badge/%20-LeetCode-lightgrey?logo=LeetCode)](https://github.com/Neotter/CS-Note/tree/master/LeetCode) | Go  | Java | Trick    |

@@ -2,7 +2,7 @@
  * @Author: Nettor
  * @Date: 2020-06-18 20:17:25
  * @LastEditors: Nettor
- * @LastEditTime: 2020-06-18 20:20:04
+ * @LastEditTime: 2020-06-18 20:42:16
  * @Description: file content
 -->
 
@@ -76,3 +76,6 @@ func topKFrequent(nums []int, k int) []int {
     return ret
 }
 ```
+
+- 连接两个数组在 append 最后一个数组后加三个点,arrry0 = append(array1,array2...)
+- sort.Ints()可以对 int array 排序

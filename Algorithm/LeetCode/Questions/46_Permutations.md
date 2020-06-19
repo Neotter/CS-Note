@@ -2,7 +2,7 @@
  * @Author: Nettor
  * @Date: 2020-06-11 12:16:53
  * @LastEditors: Nettor
- * @LastEditTime: 2020-06-12 13:27:37
+ * @LastEditTime: 2020-06-19 15:20:14
  * @Description: file content
 -->
 
@@ -74,3 +74,5 @@ func backtracking(nums []int, numsHasUsed *[]bool, path *[]int, ret *[][]int) {
     }
 }
 ```
+
+copy()

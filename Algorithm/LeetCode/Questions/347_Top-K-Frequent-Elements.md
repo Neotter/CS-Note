@@ -2,7 +2,7 @@
  * @Author: Nettor
  * @Date: 2020-06-18 20:17:25
  * @LastEditors: Nettor
- * @LastEditTime: 2020-06-18 20:42:16
+ * @LastEditTime: 2020-06-20 21:44:55
  * @Description: file content
 -->
 
@@ -51,7 +51,7 @@ public class Solution {
 func topKFrequent(nums []int, k int) []int {
     set := make(map[int]int)
     ret := make([]int,0)
-    //step.1 store the frequency in map
+    //step.1 store the frequency in map,[key:numsElement,value:frequency]
     for _,value := range nums{
         if _,ok := set[value]; ok == true{
             set[value] += 1
@@ -60,16 +60,19 @@ func topKFrequent(nums []int, k int) []int {
         }
     }
     frequencyMap := make(map[int][]int)
-    //step.2 reverse set
+    //step.2 reverse set,[key:frequency,value:numsElements]
     for key,value := range set{
         frequencyMap[value] = append(frequencyMap[value],key)
     }
     //step.3 sort
+    //get keys from frequencyMap
     keys := make([]int,0)
     for k := range frequencyMap{
         keys = append(keys,k)
     }
+    //sort keys
     sort.Ints(keys)
+    //get value from frequencyMap by keys
     for i:=1;len(ret) < k;i++{
         ret = append(ret,frequencyMap[keys[len(keys)-i]]...)
     }

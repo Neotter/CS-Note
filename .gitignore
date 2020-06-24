@@ -8,7 +8,7 @@ desktop.ini
 .Spotlight-V100
 .Trashes
 ._*
-.vscode
+
 
 ############################### 1. Android ###############################
 # Built application files
@@ -530,3 +530,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Vscode Folder
+.vscode/
